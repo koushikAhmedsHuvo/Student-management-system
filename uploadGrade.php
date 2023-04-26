@@ -285,7 +285,23 @@ _-->
 					$edu_year = $data[1];
 					$enrolled_course = $data[3];
 					$enrolled_section = $data[4];
-					$grade_point = $data[5];
+
+					$grade_mapping = [
+						"A"  => 4.0,
+						"A-" => 3.7,
+						"B+" => 3.3,
+						"B"  => 3.0,
+						"B-" => 2.7,
+						"C+" => 2.3,
+						"C"  => 2.0,
+						"C-" => 1.7,
+						"D+" => 1.3,
+						"D"  => 1.0,
+						"F"  => 0.0,
+					];
+					
+					$grade_letter = $data[5];
+					$grade_point = $grade_mapping[$grade_letter];
 					
 					// Insert data into section_t table
 					if(!array_key_exists($enrolled_section, $sections)) {
