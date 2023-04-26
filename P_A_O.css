@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:url('background.png');
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:50% 80%;
+    background-position:center;
+    background-color:#155977;
+  }
+
+.menu-bar {
+    background:#62a01c;
+    text-align: center;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+    margin-bottom: auto;
+}
+
+.menu-bar ul li {
+
+     margin: 15px;
+     padding: 10px;
+
+}
+
+.menu-bar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.ploAnalysisDepartmentProgramSchoolAverage, .menu-bar ul li:hover {
+
+    background: #10764d;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.menu1 {
+
+    display: none;
+}
+
+.menu-bar ul li:hover .menu1{
+
+    display: block;
+    position: absolute;
+    background: #10764d;
+    margin-top: 10px;
+    margin-left: -15px;
+    border-radius: 5px;
+}
+.menu-bar ul li:hover .menu1 ul{
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .menu1 ul li{
+    width: 270px;
+    padding: 10px;
+    border-bottom: 2px dotted #fff;
+    background: transparent;
+    border-radius: 5px;
+    text-align: left;
+} 
+
+.menu-bar ul li:hover .menu1 ul li a:hover{
+    color:antiquewhite;
+}
+
+
+
+
+.row2{
+    background-color:#155977;
+    border: #00BFFF;
+    padding: 10px;
+    border-radius: 5px;
+    
+  }
+
+.button_style{
+    width:300px;
+    margin-left:0px; 
+    background: #77ddff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+  .button_style:hover{
+    background:linear-gradient(90deg,#87CEFA,#00BFFF);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.button_style:active{
+    opacity: 0.5;
+}
