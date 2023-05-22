@@ -1,6 +1,3 @@
-<?php
-
-?>
 
 <?php
   include 'connect.php';
@@ -63,11 +60,12 @@ if (isset($_SESSION['user_type'])) {
                 <li><a href="ploComparisonCourse.php"> PLO Comparison(Course) </a> </li>
                 <li><a href="ploComparisonProgram.php"> PLO Comparison(Program) </a> </li>
                 <li><a href="ploComparisonSchool.php"> PLO Comparison(School) </a> </li>
+                <li><a href="courseStudentPerformance.php"> Upload Grade</a> </li>
                 <li><a href="ploComparisonDepartment.php"> PLO Comparison(Departement)</a> </li>
             </ul>
            </div>
     
-    
+         
     </li>
 
 
